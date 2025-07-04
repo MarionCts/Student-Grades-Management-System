@@ -1,6 +1,6 @@
 <?php 
 
-abstract class Etudiant {
+abstract class Personne {
 
     
 

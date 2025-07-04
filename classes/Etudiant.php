@@ -1,6 +1,6 @@
 <?php 
 
-class Etudiant {
+class Etudiant extends Personne {
 
     private $id;
     private $nom;
