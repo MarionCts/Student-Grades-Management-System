@@ -1,0 +1,29 @@
+<?php 
+
+// Database
+require_once "../includes/Database.php"; 
+
+// Classes
+require_once "../classes/GestionNotes.php"; 
+
+?>
+
+<form action="traitementEtudiant.php" method="post">
+    <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom">
+    </div>
+    <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom">
+    </div>
+    <div>
+        <label for="matricule">Matricule</label>
+        <input type="text" name="matricule" id="matricule">
+    </div>
+    <div>
+        <label for="date_naissance">Date de naissance</label>
+        <input type="date" name="date_naissance" id="date_naissance">
+    </div>
+    <input type="submit" name="addStudent" value="Ajouter">
+</form>

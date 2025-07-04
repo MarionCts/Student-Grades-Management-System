@@ -1,5 +1,6 @@
 <?php
 class Database {
+
     public static function getConnection() {
         try {
             $pdo = new PDO('mysql:host=localhost;dbname=tp_notes', 'root', '');

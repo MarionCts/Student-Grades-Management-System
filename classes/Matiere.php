@@ -15,16 +15,16 @@ class Matiere {
 
     // GETTERS
 
-    public function getId($id){
-        return $this->id = $id;
+    public function getId(){
+        return $this->id;
     }
 
-    public function getNomMatiere($nomMatiere){
-        return $this->nomMatiere = $nomMatiere;
+    public function getNomMatiere(){
+        return $this->nomMatiere;
     }
 
-    public function getCodeMatiere($codeMatiere){
-        return $this->codeMatiere = $codeMatiere;
+    public function getCodeMatiere(){
+        return $this->codeMatiere;
     }
 
     // SETTERS
