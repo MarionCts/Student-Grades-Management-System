@@ -17,6 +17,7 @@ $pdo = Database::getConnection();
 $etudiants = GestionNotes::listerEtudiants($pdo);
 $professeurs = GestionNotes::listerProfesseurs($pdo);
 $matieres = GestionNotes::listerMatieres($pdo);
+$moyenne = new GestionNotes();
 
 ?>
 
@@ -26,6 +27,7 @@ $matieres = GestionNotes::listerMatieres($pdo);
     <p><?= htmlspecialchars($etudiant->getPrenom()) ?></p>
     <p><?= htmlspecialchars($etudiant->getDateNaissance()) ?></p>
     <p><?= htmlspecialchars($etudiant->getMatricule()) ?></p>
+    <p><?= htmlspecialchars($moyenne->calculateAverageGrade($pdo, $etudiant)) ?></p>
 <?php endforeach; ?>
 
 <h4>Liste des professeurs</h4>
@@ -43,3 +45,4 @@ $matieres = GestionNotes::listerMatieres($pdo);
 
 <a href="ajoutEtudiant.php">Ajouter un étudiant</a>
 <a href="ajoutMatiere.php">Ajouter une matière</a>
+<a href="attribuerNote.php">Attribuer une note</a>

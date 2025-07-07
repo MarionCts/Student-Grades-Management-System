@@ -36,6 +36,11 @@ class Etudiant extends Personne
         return $this->prenom;
     }
 
+    public function getPrenomEtNom()
+    {
+        return $this->prenom . " " . $this->nom;
+    }
+
     public function getMatricule()
     {
         return $this->matricule;
