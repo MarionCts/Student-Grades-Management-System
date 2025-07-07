@@ -1,0 +1,26 @@
+// ************** IMPORT STYLES **************
+
+@use './abstracts' as *;
+@use './components' as *;
+@use 'base' as *;
+
+
+// ******************* MAIN ******************
+
+// Header
+
+header, .menu {
+    @include flex-preset(row, center, space-between);
+}
+
+.menu {
+    gap: 2.5rem;
+}
+
+.header__logo {
+    height: 7rem;
+
+    img {
+        height: inherit;
+    }
+}

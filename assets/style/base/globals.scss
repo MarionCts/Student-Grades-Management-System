@@ -1,0 +1,26 @@
+// ************** IMPORT STYLES **************
+
+@use '../abstracts' as *;
+
+
+// ****************** GLOBALS ****************
+
+html {
+    color: $indigo;
+    font-family: $inter;
+}
+
+body {
+    background-color: $BG;
+    padding: 3rem;
+}
+
+// Text modifications
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bolder {
+    font-weight: 800;
+}

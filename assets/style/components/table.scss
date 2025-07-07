@@ -1,0 +1,27 @@
+// ************** IMPORT STYLES **************
+
+@use '../abstracts' as *;
+
+
+// ****************** TABLE ******************
+
+.table-template {
+    border-collapse: collapse;
+
+    th {
+        text-align: left;
+        color: $white;
+        background-color: $indigo;
+        font-weight: 500;
+    }
+
+    td {
+        height: 2rem;
+        font-size: 2rem;
+        vertical-align: center;
+    }
+
+    td, th {
+        padding: 1.5rem;
+    }
+}

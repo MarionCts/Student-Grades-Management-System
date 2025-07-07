@@ -1,0 +1,42 @@
+.primary-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+.secondary-title {
+  font-family: "Afacad", sans-serif;
+  font-weight: 600;
+  font-size: 4.8rem;
+}
+
+.third-title {
+  font-family: "Afacad", sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+}
+
+.menu li a {
+  font-family: "Inter", sans-serif;
+  color: #0C3A4C;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: all 0.3s linear;
+}
+.menu li a:hover {
+  color: #65A8AB;
+}
+
+th {
+  font-family: "Afacad", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+p, td {
+  font-family: "Afacad", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+}/*# sourceMappingURL=typography.css.map */

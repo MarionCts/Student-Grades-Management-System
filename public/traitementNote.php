@@ -7,9 +7,14 @@ require_once "../includes/Database.php";
 require_once "../classes/Note.php";
 require_once "../classes/GestionNotes.php";
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addNote']) && $_POST['addNote'] >= 0 && $_POST['addNote'] <= 20) {
+// Generating the CSRF Token to secure the information posted with the form
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['addNote']) && isset($_POST['csrf_token']) && $_POST['valeurNote'] >= 0 && $_POST['valeurNote'] <= 20) {
     $pdo = Database::getConnection();
-    $note = new Note(null, $_POST['id_etudiant'], $_POST['id_matiere'], $_POST['valeurNote']);
+    $note = new Note(null, null, null, $_POST['id_etudiant'], $_POST['id_matiere'], $_POST['valeurNote']);
     $ajoutNote = new GestionNotes();
     $ajoutNote->addNote($pdo, $note);
 

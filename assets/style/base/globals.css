@@ -1,0 +1,17 @@
+html {
+  color: #0C3A4C;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #FFFBF9;
+  padding: 3rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bolder {
+  font-weight: 800;
+}/*# sourceMappingURL=globals.css.map */

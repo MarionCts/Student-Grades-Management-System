@@ -1,5 +1,8 @@
 <?php 
 
+// Header
+require_once "../includes/header.php";
+
 // Database
 require_once "../includes/Database.php"; 
 
@@ -19,4 +22,12 @@ require_once "../classes/GestionNotes.php";
     </div>
     <div>
     <input type="submit" name="addSubject" value="Ajouter">
+    <input type="hidden" name="csrf_token" value="<?=htmlspecialchars($SESSION['csrf_token'])?>">
 </form>
+
+<?php
+
+// Footer
+require_once "../includes/footer.php";
+
+?>

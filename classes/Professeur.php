@@ -5,12 +5,12 @@ require_once "../includes/Database.php";
 class Professeur extends Personne
 {
 
-    private $codeMatiere;
+    private $idMatiere;
 
-    public function __construct($id, $nom, $prenom, $codeMatiere)
+    public function __construct($id = null, $nom, $prenom, $idMatiere)
     {
         parent::__construct($id, $nom, $prenom);
-        $this->codeMatiere = $codeMatiere;
+        $this->idMatiere = $idMatiere;
     }
 
     // GETTERS
@@ -30,9 +30,9 @@ class Professeur extends Personne
         return $this->prenom;
     }
 
-    public function getCodeMatiere()
+    public function getIdMatiere()
     {
-        return $this->codeMatiere;
+        return $this->idMatiere;
     }
 
     // SETTERS
@@ -47,9 +47,9 @@ class Professeur extends Personne
         $this->prenom = $prenom;
     }
 
-    public function setCodeMatiere($codeMatiere)
+    public function setDdMatiere($idMatiere)
     {
-        $this->codeMatiere = $codeMatiere;
+        $this->idMatiere = $idMatiere;
     }
 
 }

@@ -1,0 +1,42 @@
+// ************** IMPORT STYLES **************
+
+@use '../abstracts' as *;
+
+
+// **************** TYPGRAPHY ****************
+
+// Titles
+
+.primary-title {
+    @include text-preset(primary-title);
+}
+
+.secondary-title {
+    @include text-preset(secondary-title);
+}
+
+.third-title {
+    @include text-preset(third-title);
+}
+
+
+// Main menu links
+
+.menu li a {
+    @include text-preset(menu-link);
+
+    &:hover {
+        @include text-hover-preset(menu-link);
+    }
+}
+
+
+// Paragraphs, table contents
+
+th {
+    @include text-preset(fourth-title);
+}
+
+p, td {
+    @include text-preset(paragraph);
+}

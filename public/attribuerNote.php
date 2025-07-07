@@ -1,5 +1,8 @@
 <?php 
 
+// Header
+require_once "../includes/header.php";
+
 // Database
 require_once "../includes/Database.php"; 
 
@@ -34,4 +37,12 @@ $matieres = GestionNotes::listerMatieres($pdo);
         <input type="number" name="valeurNote" id="valeurNote">
     </div>
     <input type="submit" name="addNote" value="Ajouter">
+    <input type="hidden" name="csrf_token" value="<?=htmlspecialchars($SESSION['csrf_token'])?>">
 </form>
+
+<?php
+
+// Footer
+require_once "../includes/footer.php";
+
+?>

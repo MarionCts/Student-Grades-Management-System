@@ -1,0 +1,17 @@
+.table-template {
+  border-collapse: collapse;
+}
+.table-template th {
+  text-align: left;
+  color: #fffdfd;
+  background-color: #0C3A4C;
+  font-weight: 500;
+}
+.table-template td {
+  height: 2rem;
+  font-size: 2rem;
+  vertical-align: center;
+}
+.table-template td, .table-template th {
+  padding: 1.5rem;
+}/*# sourceMappingURL=table.css.map */
