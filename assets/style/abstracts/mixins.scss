@@ -4,7 +4,7 @@
 
 // ****************** MIXINS *****************
 
-// FLEXBOX PRESET
+// ----- FLEXBOX PRESETS -----
 
 @mixin flex-preset($direction: row, $align: center, $justify: center) {
   display: flex;
@@ -13,13 +13,13 @@
   justify-content: $justify;
 }
 
-// TYPOGRPAHY
+// ----- TEXT PRESETS -----
 
 @mixin text-preset($type) {
   @if $type == primary-title {
     font-family: $inter;
     font-weight: 700;
-    font-size: 4.8rem;
+    font-size: 8rem;
 
   } @else if $type == secondary-title {
     font-family: $afacad;
@@ -28,6 +28,7 @@
 
   } @else if $type == third-title {
     font-family: $afacad;
+    color: $aquamarine;
     font-weight: 600;
     font-size: 3.6rem;
 
@@ -46,7 +47,7 @@
     color: $indigo;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.3rem;
     transition: all .2s linear;
   }
@@ -56,4 +57,50 @@
   @if $type == menu-link {
     color: $aquamarine;
   } 
+}
+
+// ----- BUTTON PRESETS -----
+
+@mixin button-preset($type) {
+  @if $type == primary-button {
+    font-family: $inter;
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 6rem;
+    background-color: $indigo;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    transition: all .2s linear;
+
+  } @else if $type == secondary-button {
+    font-family: $inter;
+    border-radius: 2rem;
+    padding: 1rem 6rem;
+    background-color: transparent;
+    border: .1rem solid $indigo;
+    color: $indigo;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    cursor: pointer;
+    transition: all .2s linear;
+  }
+}
+
+@mixin button-hover-preset($type) {
+  @if $type == primary-button {
+    background-color: $aquamarine;
+    color: $indigo;
+    border: none;
+
+  } @else if $type == secondary-button {
+    background-color: $indigo;
+    color: $white;
+    border: .1rem solid $indigo;
+  }
 }

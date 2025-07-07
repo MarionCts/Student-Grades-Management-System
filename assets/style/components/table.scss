@@ -1,27 +1,32 @@
 // ************** IMPORT STYLES **************
 
-@use '../abstracts' as *;
-
+@use "../abstracts" as *;
 
 // ****************** TABLE ******************
 
 .table-template {
-    border-collapse: collapse;
+  border-collapse: collapse;
+  width: 100rem;
+  margin: 1rem 0 6rem;
 
-    th {
-        text-align: left;
-        color: $white;
-        background-color: $indigo;
-        font-weight: 500;
-    }
+  th {
+    color: $white;
+    background-color: $indigo;
+    font-weight: 500;
+  }
 
-    td {
-        height: 2rem;
-        font-size: 2rem;
-        vertical-align: center;
-    }
+  td {
+    font-size: 2.2rem;
+    vertical-align: center;
+  }
 
-    td, th {
-        padding: 1.5rem;
-    }
+  tr:nth-child(even) {
+    background-color: $overlay;
+  }
+
+  td,
+  th {
+    padding: 1.2rem;
+    text-align: center;
+  }
 }

@@ -37,6 +37,6 @@ th {
     @include text-preset(fourth-title);
 }
 
-p, td {
+p, td, label {
     @include text-preset(paragraph);
 }

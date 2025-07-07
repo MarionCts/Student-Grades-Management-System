@@ -1,0 +1,30 @@
+// ************** IMPORT STYLES **************
+
+@use "../abstracts" as *;
+
+// ****************** FORM *******************
+
+form {
+    width: 40rem;
+    margin: 3rem 0;
+    @include flex-preset(column, center, center);
+    gap: 1.5rem;
+
+    div {
+        width: inherit;
+        gap: .5rem;
+        @include flex-preset(column, center, center);
+    }
+}
+
+input[type=text], input[type=number], input[type=date], select {
+    border: .1rem solid $aquamarine;
+    width: inherit;
+    padding: 1rem;
+    border-radius: 2rem;
+    height: 4rem;
+}
+
+input[type=submit] {
+    margin-top: 2rem;
+}

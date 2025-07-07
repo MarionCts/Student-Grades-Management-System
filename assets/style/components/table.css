@@ -1,17 +1,22 @@
 .table-template {
   border-collapse: collapse;
+  width: 100rem;
+  margin: 1rem 0 6rem;
 }
 .table-template th {
-  text-align: left;
   color: #fffdfd;
   background-color: #0C3A4C;
   font-weight: 500;
 }
 .table-template td {
-  height: 2rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   vertical-align: center;
 }
-.table-template td, .table-template th {
-  padding: 1.5rem;
+.table-template tr:nth-child(even) {
+  background-color: #e7eef0;
+}
+.table-template td,
+.table-template th {
+  padding: 1.2rem;
+  text-align: center;
 }/*# sourceMappingURL=table.css.map */

@@ -1,19 +1,94 @@
 .table-template {
   border-collapse: collapse;
+  width: 100rem;
+  margin: 1rem 0 6rem;
 }
 .table-template th {
-  text-align: left;
   color: #fffdfd;
   background-color: #0C3A4C;
   font-weight: 500;
 }
 .table-template td {
-  height: 2rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   vertical-align: center;
 }
-.table-template td, .table-template th {
-  padding: 1.5rem;
+.table-template tr:nth-child(even) {
+  background-color: #e7eef0;
+}
+.table-template td,
+.table-template th {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.primary-button {
+  font-family: "Inter", sans-serif;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 6rem;
+  background-color: #0C3A4C;
+  color: #fffdfd;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.primary-button:hover {
+  background-color: #65A8AB;
+  color: #0C3A4C;
+  border: none;
+}
+
+.secondary-button {
+  font-family: "Inter", sans-serif;
+  border-radius: 2rem;
+  padding: 1rem 6rem;
+  background-color: transparent;
+  border: 0.1rem solid #0C3A4C;
+  color: #0C3A4C;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.secondary-button:hover {
+  background-color: #0C3A4C;
+  color: #fffdfd;
+  border: 0.1rem solid #0C3A4C;
+}
+
+form {
+  width: 40rem;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+form div {
+  width: inherit;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=text], input[type=number], input[type=date], select {
+  border: 0.1rem solid #65A8AB;
+  width: inherit;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 4rem;
+}
+
+input[type=submit] {
+  margin-top: 2rem;
 }
 
 * {
@@ -35,7 +110,7 @@ ul, li, a {
 .primary-title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 8rem;
 }
 
 .secondary-title {
@@ -46,6 +121,7 @@ ul, li, a {
 
 .third-title {
   font-family: "Afacad", sans-serif;
+  color: #65A8AB;
   font-weight: 600;
   font-size: 3.6rem;
 }
@@ -55,7 +131,7 @@ ul, li, a {
   color: #0C3A4C;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.3rem;
   transition: all 0.2s linear;
 }
@@ -69,7 +145,7 @@ th {
   font-size: 2.5rem;
 }
 
-p, td {
+p, td, label {
   font-family: "Afacad", sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
@@ -82,7 +158,20 @@ html {
 
 body {
   background-color: #FFFBF9;
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  padding: 3rem 3rem 0;
+}
+
+main {
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .uppercase {
@@ -109,4 +198,33 @@ header, .menu {
 }
 .header__logo img {
   height: inherit;
+}
+
+.hero {
+  height: 20rem;
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.students-list, .professors-list, .subjects-list, .grades-list {
+  overflow-x: auto;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0C3A4C;
+}
+footer p {
+  color: #fffdfd;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

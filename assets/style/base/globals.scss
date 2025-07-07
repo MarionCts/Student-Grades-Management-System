@@ -12,10 +12,20 @@ html {
 
 body {
     background-color: $BG;
-    padding: 3rem;
+    min-height: 100vh;
+    position: relative;
 }
 
-// Text modifications
+header {
+    padding: 3rem 3rem 0;
+}
+
+main {
+    padding: 3rem;
+    @include flex-preset(column, center, center);
+}
+
+// ----- TEXT MODIFICATIONS -----
 
 .uppercase {
     text-transform: uppercase;

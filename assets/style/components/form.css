@@ -1,0 +1,29 @@
+form {
+  width: 40rem;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+form div {
+  width: inherit;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=text], input[type=number], input[type=date], select {
+  border: 0.1rem solid #65A8AB;
+  width: inherit;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 4rem;
+}
+
+input[type=submit] {
+  margin-top: 2rem;
+}/*# sourceMappingURL=form.css.map */

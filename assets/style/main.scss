@@ -7,7 +7,7 @@
 
 // ******************* MAIN ******************
 
-// Header
+// ----- HEADER -----
 
 header, .menu {
     @include flex-preset(row, center, space-between);
@@ -22,5 +22,35 @@ header, .menu {
 
     img {
         height: inherit;
+    }
+}
+
+// ----- HERO -----
+
+.hero {
+    height: 20rem;
+    margin: 8rem 0;
+    @include flex-preset(column, center, center);
+}
+
+// ----- TABLES -----
+
+.students-list, .professors-list, .subjects-list, .grades-list {
+    overflow-x: auto;
+}
+
+// ----- FOOTER -----
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 6rem;
+    @include flex-preset(row, center, center);
+    background-color: $indigo;
+
+    p {
+        color: $white;
+        font-size: 2rem;
     }
 }
