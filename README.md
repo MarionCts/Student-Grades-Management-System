@@ -25,13 +25,13 @@ This project was developed to:
 
 - **Main dashboard:** Displays:
 
-A table of students and their average grades.
+	- A table of students and their average grades.
 
-A table of all professors.
+	- A table of all professors.
 
-A table of all subjects.
+	-  A table of all subjects.
 
-A table listing all grades, including the student and subject involved.
+	- A table listing all grades, including the student and subject involved.
 
 - **Simple and clear interface** for easy navigation and management.
 
@@ -69,13 +69,13 @@ Ce projet a été développé pour :
 
 - **Tableau de bord principal :** Affiche :
 
-Un tableau avec la liste des étudiants et leur moyenne.
+	- Un tableau avec la liste des étudiants et leur moyenne.
 
-Un tableau listant les professeurs.
+	- Un tableau listant les professeurs.
 
-Un tableau des matières.
+	- Un tableau des matières.
 
-Un tableau des notes (avec l’étudiant et la matière concernés).
+	- Un tableau des notes (avec l’étudiant et la matière concernés).
 
 - **Interface simple et claire** pour une navigation fluide.
 
@@ -91,10 +91,10 @@ Un tableau des notes (avec l’étudiant et la matière concernés).
 
 ## 📄 Création de la base de données
 
-## EN - 
+#### EN - 
 Here are the SQL lines used to create the database and the tables for this project:
 
-## FR - 
+#### FR - 
 Voici les commandes SQL réalisées pour la création de la base de données et des tables :
 
 
