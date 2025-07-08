@@ -133,9 +133,3 @@ USE tp_notes;`
 
 `ALTER TABLE etudiants
 ADD date_naissance DATE;`
-
-`ALTER TABLE matieres
-ADD bareme_20 INT;`
-
-`ALTER TABLE matieres
-ADD bareme_10 INT;`
