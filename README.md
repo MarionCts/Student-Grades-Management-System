@@ -89,7 +89,7 @@ Ce projet a été développé pour :
 - HTML & CSS/SCSS
 
 
-## 📄 Création de la base de données
+## 📄 Database creation / Création de la base de données
 
 #### EN - 
 Here are the SQL lines used to create the database and the tables for this project:
